@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes Animation {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  20% {
+    opacity: 0.8;
+  }
+
+  30% {
+    opacity: 0.7;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.4;
+  }
+
+  70% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  90% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+
+}
+
+
+
+
+
+.body {
+  position: relative;
+}
+
+.background-wrapper {
+  background-image: url(img/291978655_139076968770478_5624724748661053862_n.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.main-input,
+.main-button {
+  width: 90%;
+  padding: 20px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 20px;
+  margin-top: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+.main-input:focus {
+  background-color: rgb(152, 227, 236)
+}
+
+.main-button {
+  width: 10%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+
+.main-button:focus {
+  color: rgb(152, 227, 236)
+}
+
+.list {
+  margin-top: 30px;
+}
+
+.checkbox-active {
+  text-decoration: line-through;
+}
+
+.item {
+  list-style-type: none;
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.list-label {
+  color: rgb(255, 255, 255);
+}
+
+.animation {
+  animation: Animation 5.5s;
+}
+
+.checkbox-block {
+  width: calc(90% - 30px);
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.checkbox-close {
+  background-image: url(img/header__burger-close.svg);
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+
+}
+
+.cancel-close {
+  background-image: none;
+
+}
+
+.cancel-close,
+.checkbox-close {
+  color: #fff;
+}
